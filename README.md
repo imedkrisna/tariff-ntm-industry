@@ -1,2 +1,28 @@
-# tariff-ntm-industry
- a repo on my paper the heterogenous impact of tariff and NTMs on Indonesian firms
+# What is this repo?
+ files needed to reproduce my paper. I do not upload the needed data here, however, since it is too much size and some of my data is restricted.
+
+ Be wary that this isn't the best practice of coding so please sorry if the code is too WET for your taste.
+
+# What to run?
+ just run the final2015.do to reproduce data on the paper.
+
+# File is needed but do not exist here
+ 1. survey industry data which I call 'paper2si.dta'. This is not an open access data.
+ 1. customs data on a folder i call 'bc'. This is not an open access data.
+ 1. a folder called 'NTM' because it contains data from 'bc'.
+ 1. gravity data i call 'grav.dta' because it is quite big in size. It can be easily downloaded from [CEPII](http://www.cepii.fr/cepii/en/bdd_modele/presentation.asp?id=8).
+ 1. a folder called 'trains' because it is quite big in size. It can be easily downloaded from [TRAINS UNCTAD](https://trains.unctad.org/Forms/Analysis.aspx)
+ 1. a folder i call 'other' because it is just contain 'gravity data'
+ 
+# what are these do-files do?
+ 1. prepsi is a preparation to make the rough SI dataset workable. generates "sibener.dta"
+ 1. ntm2015 to prepare the NTM datase "imntm.dta"
+ 1. prepul to include tariff.
+ 1. coverage constructs coverage ratio.
+ 1. tfpregen makes the `levpet` and adds TFP to the dataset.
+ 1. coveragereg does the second stage regression.
+ 1. final2015 does PPML.
+ 1. graph makes k,n comparison graphs.
+
+# Caveat
+ There might be changes I haven't updated after many conferences and peer-reviews so be careful.
